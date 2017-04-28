@@ -1,0 +1,7 @@
+print ('Enter the price') 
+price1 = input()
+
+print ('Enter the money that you`ve received')
+money1 = input()
+
+print ('your change is', int(money1) - int(price1))
