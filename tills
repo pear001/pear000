@@ -1,0 +1,50 @@
+import random
+import sys
+
+#This program allows you to calculate the amount of money that you have got in the till at the end of a day.
+
+password = 'eloelo'
+def login_elo():
+
+
+    print ('Enter the password')
+    password1 = input()
+
+    if password1 == password:
+        print ('')
+        print ('Access granted')
+    else:
+        print ("Wrong password")
+        sys.exit()
+
+login_elo()
+
+################
+
+def calculate_tills():
+    print('')
+    print('How many 50£ you got?')
+    while True:
+        try:
+            fifty = int(input()) * 50
+        except ValueError:
+            print("Please enter the number")
+        break
+        
+    print('How many 20£ you got?')
+
+    twenty = int(input()) * 20
+
+    print('How many 10£ you got?')
+    ten = int(input()) * 10
+
+    print ('How many 5£ you got?')
+    five = int(input()) * 5
+
+
+    calculate_tills.suma = fifty + twenty + ten + five
+
+calculate_tills()
+print('')
+print ('You have ', calculate_tills.suma,'£ in yur till')
+
